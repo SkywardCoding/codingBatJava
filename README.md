@@ -1,3 +1,3 @@
 # codingBatJava
 
-This repo contains solutions to all Java problems available at codingBat.com.
+This repo contains solutions to Java problems available at codingBat.com.
