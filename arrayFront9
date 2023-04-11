@@ -1,0 +1,13 @@
+// Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+public boolean arrayFront9(int[] nums) {
+  int MAX_LENGTH = Math.min(nums.length, 4);
+  boolean result = false;
+  
+  if (nums.length == 0) return false;
+  
+  for (int i = 0; i < MAX_LENGTH; i++) {
+    if(nums[i] == 9) result = true;
+  }
+  return result;
+}
