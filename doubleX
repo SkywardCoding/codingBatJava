@@ -1,0 +1,15 @@
+// Given a string, return true if the first instance of "x" in the string is immediately followed by another "x".
+
+boolean doubleX(String str) {
+  boolean result = false;
+  
+  if (!str.contains("x")) return false;
+  if (str.length() < 2) return false;
+  
+  int x = str.indexOf("x");
+  
+  if (x+1 == str.length()) return false;
+  if (str.substring(x, x+2).equals("xx")) result = true;
+  
+  return result;
+}
